@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url('3d-render-cubic-platform_325858-76.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    /* border: 2px solid red; */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    /* border: 2px solid black; */
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7vw;
+}
+
+.box {
+    height: 15vh;
+    width: 7vw;
+    border-radius: 10px;
+    border: none;
+    font-size: 5vw;
+    color: white;
+    background-color: black;
+}
+
+#main h1 {
+    font-size: 4vw;
+    color: gray;
+    filter: drop-shadow(3px 4px 6px black);
+    font-family: math;
+}
+
+#reset-btn {
+    padding: 1vw 1.7vw;
+    font-size: 1.8vw;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-family: math;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: gray;
+    filter: drop-shadow(3px 4px 6px black);
+}
+
+#reset-btn:hover {
+    background-color: gray;
+    color: white;
+    filter: drop-shadow(3px 4px 6px black);
+}
+
+#new-btn {
+    padding: 1vw 1.7vw;
+    font-size: 1.8vw;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-family: math;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: gray;
+    filter: drop-shadow(3px 4px 6px black);
+}
+
+#new-btn:hover {
+    background-color: gray;
+    color: white;
+    filter: drop-shadow(3px 4px 6px black);
+}
+
+#msg {
+    font-size: 4vw;
+    font-weight: bold;
+    color: gray;
+    filter: drop-shadow(15px 10px 6px black);
+    font-family: math;
+}
+
+.msg-container {
+    /* border: 2px solid rebeccapurple; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+
+}
+
+.hide {
+    display: none;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+    #msg {
+        font-size: 7vw;
+    }
+    #new-btn{
+        padding: 2vw 5.7vw;
+        font-size: 4.8vw;    
+    }
+    #main h1 {
+        font-size: 12vw;
+        font-weight: bold;
+        color: gray;
+        filter: drop-shadow(3px 4px 6px black);
+    }
+    .box {
+        height: 12vh;
+        width: 21vw;
+        border-radius: 10px;
+        border: none;
+        font-size: 12vw;
+    }
+    .game {
+        /* border: 2px solid black; */
+        height: 45vh;
+        width: 71vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3.7vw;
+    }
+    #reset-btn {
+        padding: 2vw 3.7vw;
+        font-size: 5.8vw;
+    }
+}
